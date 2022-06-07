@@ -5,7 +5,8 @@
  *
  * Return: Always 0.
  */
-int main(void){
+int main(void)
+{
 	int c, bool_1, bool_2;
 
 	long int n1, n2, fn, fn2, n11, n22;
@@ -14,15 +15,19 @@ int main(void){
 	n2 = 2;
 	bool_1 =  bool_2 = 1;
 	printf("%ld, %ld", n1, n2);
-	for (c = 0; c < 96; c++){
-		if (bool_1){
+	for (c = 0; c < 96; c++)
+	{
+		if (bool_1)
+		{
 			fn = n1 + n2;
 			printf(", %ld", fn);
 			n1 = n2;
 			n2 = fn;
 		}
-		else{
-			if (bool_2){
+		else
+		{
+			if (bool_2)
+			{
 				n11 = n1 % 1000000000;
 				n22 = n2 % 1000000000;
 				n1 = n1 / 1000000000;
